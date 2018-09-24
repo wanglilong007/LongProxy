@@ -1,0 +1,16 @@
+zuul.SendForwardFilter.route.disable: true
+
+zuul:
+  ssl-hostname-validation-enabled: false
+  
+server:
+  port: 8443
+  ssl:
+    key-store-password: Huawei@123
+    key-password: Huawei@123
+    key-alias: tomcat
+    
+    enabled: true
+    key-store: classpath:tomcat.key
+    key-store-type: JKS
+    
